@@ -20,20 +20,40 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
+    $('.close').click(function () {
+        $('.expanded-description').css("display", "none");
+        $('.expanded-description').css("animation", "fadeIn ease 0.5s");
+    });
+
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["really cool guy", "Software Developer"],
+        strings: [
+            "🎓 Student",
+            "💻 Software Developer",
+            "🎓 Student",
+            "💻 Software Developer",
+            "🎓 Student",
+            "💻 Software Developer",
+            "🎓 Student",
+            "💻 Software Developer",
+            "🍫 Chocolate Connoisseur"
+        ],
         typeSpeed: 100,
         backSpeed: 60,
-        loop: false
+        loop: true
     });
 
     var typed = new Typed(".typing-2", {
         strings: [
-            "Student",
-            "Software Developer",
-            "QA Analyst",
-            "Chocolate Connoisseur"
+            "​Student 🎓",
+            "Software Developer 💻",
+            "​Student 🎓",
+            "Software Developer 💻",
+            "​Student 🎓",
+            "Software Developer 💻",
+            "​Student 🎓",
+            "Software Developer 💻",
+            "Chocolate Connoisseur 🍫"
         ],
         typeSpeed: 100,
         backSpeed: 60,
@@ -63,3 +83,8 @@ $(document).ready(function(){
         }
     });
 });
+
+function expandDescription(element) {
+    var id = element.id;
+    $(`#${id}.expanded-description`).css("display", "block");
+}

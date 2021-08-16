@@ -1,251 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Hocking</title>
-    <link rel="shortcut icon" type="image/png" href="images/logogreen.png" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
-</head>
-<body>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#"><img src="images/logo.png"></a></div>
-            <ul class="menu">
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <!-- <li><a href="#services" class="menu-btn">Services</a></li> -->
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <!-- <li><a href="#teams" class="menu-btn">Teams</a></li> -->
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-
-    <!-- home section start -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Andrew Hocking</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="https://github.com/AndrewHocking"><img src="images/github.png"></a>
-                <a href="https://www.linkedin.com/in/andrew-hocking-050a06154/"><img src="images/linkedin.png"></a>
-                <a href="mailto:andrew@hocking.tech"><img src="images/envelope.png"></a>
-                <a href="tel:+16473826567"><img src="images/phone.png"></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="images/profile-1.jpeg" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Andrew and I'm a <span class="typing-2"></span></div>
-                    <p>I'm a detail-oriented, 3rd-year Computer Science student at York University with excellent understanding of the core
-                    principles and best practices of object-oriented programming, as well as strong writing and interpersonal skills. I
-                    enjoy collaborating with and learning from peers, as well as being challenged by solving difficult problems individually
-                    and trying new things.</p>
-                    <a class="download-button" href="./files/Resume - Andrew Hocking.pdf"><i class="fas fa-file-pdf"></i>Download Resume</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Andrew Hocking</title>
+        <link rel="shortcut icon" type="image/png" href="images/logo-green.png" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#"><img src="images/logo.png"></a></div>
+                <ul class="menu">
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#skills" class="menu-btn">Skills</a></li>
+                    <li><a href="#projects" class="menu-btn">Projects</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- services section start -->
-    <!-- <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">My services</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">Web Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+        <!-- home section start -->
+        <section class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-2">Andrew Hocking</div>
+                    <div class="text-3"><span class="typing"></span></div>
+                    <a href="https://github.com/AndrewHocking" data-toggle="tooltip" title="Follow me on GitHub"><img src="images/button-icons/github.png"></a>
+                    <a href="https://www.linkedin.com/in/andrew-hocking-050a06154/" data-toggle="tooltip" title="Connect with me on LinkedIn"><img src="images/button-icons/linkedin.png"></a>
+                    <a href="mailto:andrew@hocking.tech" data-toggle="tooltip" title="Send me an email"><img src="images/button-icons/envelope.png"></a>
+                    <a href="tel:+16473826567" data-toggle="tooltip" title="Give me a call"><img src="images/button-icons/phone.png"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section start -->
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title">About me</h2>
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="images/andrew.jpeg" alt="Picture of Andrew Hocking sitting outside, looking particularly handsome.">
+                    </div>
+                    <div class="column right">
+                        <div class="text">I'm Andrew and I'm a <span class="typing-2"></span></div>
+                        <p>I'm a detail-oriented, 3rd-year Computer Science student at York University with excellent understanding of the core
+                        principles and best practices of object-oriented programming, as well as strong writing and interpersonal skills. I
+                        enjoy collaborating with and learning from peers, as well as being challenged by solving difficult problems individually
+                        and trying new things.</p>
+                        <a class="download-button" href="./files/Resume - Andrew Hocking.pdf"><i class="fas fa-file-pdf"></i>Download Resume</a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="text">Advertising</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Apps Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                    </div>
-                </div>
-               </div>
             </div>
-        </div>
-    </section> -->
+        </section>
 
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">Some industry tools I have used:</div>
-                    <ul>
-                        <li>Jenkins, CircleCI</li>
-                        <li>Jira, Confluence</li>
-                        <li>Git (GitHub, Bitbucket)</li>
-                        <li>Eclipse, IntelliJ IDEA</li>
-                        <li>Xcode, Android Studio</li>
-                        <li>Unix Terminal (bash, zsh)</li>
-                        <li>SeeTest, Xray, JUnit, TestFX</li>
-                        <li>Flask</li>
-                        <li>Jupyter Notebooks</li>
-                        <li>Google Cloud</li>
-                    </ul>
-                    <!-- <a href="#">Read more</a> -->
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>Java</span>
-                            <span>5 years</span>
+        <!-- skills section start -->
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <h2 class="title">My skills</h2>
+                <div class="skills-content">
+                    <div class="column left">
+                        <div class="text">Some industry tools I have used:</div>
+                        <ul>
+                            <li>Jenkins, CircleCI</li>
+                            <li>Jira, Confluence</li>
+                            <li>Git (GitHub, Bitbucket)</li>
+                            <li>Eclipse, IntelliJ IDEA</li>
+                            <li>Xcode, Android Studio</li>
+                            <li>Unix Terminal (bash, zsh)</li>
+                            <li>SeeTest, Xray, JUnit, TestFX</li>
+                            <li>Flask</li>
+                            <li>Jupyter Notebooks</li>
+                            <li>Google Cloud</li>
+                        </ul>
+                    </div>
+                    <div class="column right">
+                        <div class="bars">
+                            <div class="info">
+                                <span><img class="language-icon" src="images/language-icons/java.png">Java</span>
+                                <span>5 years</span>
+                            </div>
+                            <div class="line java"></div>
                         </div>
-                        <div class="line java"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Swift (self-taught)</span>
-                            <span>4 years</span>
+                        <div class="bars">
+                            <div class="info">
+                                <span><img class="language-icon" src="images/language-icons/swift.png">Swift (self-taught)</span>
+                                <span>4 years</span>
+                            </div>
+                            <div class="line swift"></div>
                         </div>
-                        <div class="line swift"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>C, C++</span>
-                            <span>3 years</span>
+                        <div class="bars">
+                            <div class="info">
+                                <span><img class="language-icon" src="images/language-icons/c-cpp.png">C, C++</span>
+                                <span>3 years</span>
+                            </div>
+                            <div class="line clangs"></div>
                         </div>
-                        <div class="line clangs"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML, CSS, JavaScript</span>
-                            <span>3 years</span>
+                        <div class="bars">
+                            <div class="info">
+                                <span><img class="language-icon" src="images/language-icons/html-css-js.png">HTML, CSS, JavaScript</span>
+                                <span>3 years</span>
+                            </div>
+                            <div class="line webdev"></div>
                         </div>
-                        <div class="line webdev"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Python (self-taught)</span>
-                            <span>1 year</span>
+                        <div class="bars">
+                            <div class="info">
+                                <span><img class="language-icon" src="images/language-icons/python.png">Python (self-taught)</span>
+                                <span>1 year</span>
+                            </div>
+                            <div class="line python"></div>
                         </div>
-                        <div class="line python"></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- teams section start -->
-    <!-- <section class="teams" id="teams">
-        <div class="max-width">
-            <h2 class="title">My teams</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-1.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <!-- projects section start -->
+        <section class="projects" id="projects">
+            <div class="max-width">
+                <h2 class="title">Projects</h2>
+                <div class="carousel owl-carousel">
+                    <div class="card" id="venn">
+                        <div class="box">
+                            <div id="venn" class="app-icon" onclick="expandDescription(this)" data-toggle="tooltip" title="Click for more information">
+                                <img src="images/app-icons/venn.png" alt="Venn app icon: two circles intersecting, creating a Venn diagram.">
+                                <div class="overlay"><i class="fas fa-info-circle"></i></div>
+                            </div>
+                            <div class="text">Venn</div>
+                            <p>A Java (JavaFX) desktop app for creating Venn diagrams.</p>
+                            <span>
+                                <a href="https://github.com/nourinjh/EECS2311" data-toggle="tooltip" title="See more details on GitHub"><img src="images/button-icons/github.png"></a>
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-2.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="card" id="carsurance">
+                        <div class="box">
+                            <div id="carsurance" class="app-icon" onclick="expandDescription(this)" data-toggle="tooltip" title="Click for more information">
+                                <img src="images/app-icons/carsurance.png" alt="Carsurance app icon: a teal roundrect with &quot;Carsurance&quot; written in the middle, in an arc shape.">
+                                <div class="overlay"><i class="fas fa-info-circle"></i></div>
+                            </div>
+                            <div class="text">Carsurance</div>
+                            <p>An ML-based mobile app for getting car insurance estimates.</p>
+                            <span>
+                                <a href="https://github.com/sehmim/qHacks2020" data-toggle="tooltip" title="See more details on GitHub"><img src="images/button-icons/github.png"></a>
+                                <a href="https://devpost.com/software/qhacks2020-0cu3fq" data-toggle="tooltip" title="See more details on Devpost"><img src="images/button-icons/devpost.png"></a>
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-3.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="card" id="shrug">
+                        <div class="box">
+                            <div id="shrug" class="app-icon" onclick="expandDescription(this)" data-toggle="tooltip" title="Click for more information">
+                                <img src="images/app-icons/shrug.png" alt="Shrug app icon: a white arrow on a top of several coloured triangles, depicting a decision wheel.">
+                                <div class="overlay"><i class="fas fa-info-circle"></i></div>
+                            </div>
+                            <div class="text">Shrug</div>
+                            <p>A SwiftUI iOS app for helping you make decisions with a spinner.</p>
+                            <span>
+                                <a data-toggle="tooltip" title="Coming Soon to GitHub"><img src="images/button-icons/github.png"></a>
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-4.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="card" id="solitaire">
+                        <div class="box">
+                            <div id="solitaire" class="app-icon" onclick="expandDescription(this)" data-toggle="tooltip" title="Click for more information">
+                                <img src="images/app-icons/solitaire.png" alt="Solitaire app icon: A stack of blue cards with one Ace of Hearts face-up to the right of it, on top of a green felt background.">
+                                <div class="overlay"><i class="fas fa-info-circle"></i></div>
+                            </div>
+                            <div class="text">Solitaire</div>
+                            <p>A SwiftUI iPad/Mac Catalyst solitaire game.</p>
+                            <span>
+                                <a href="https://github.com/AndrewHocking/Solitaire" data-toggle="tooltip" title="See more details on GitHub"><img src="images/button-icons/github.png"></a>
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="card" id="metrognome">
+                        <div class="box">
+                            <div id="metrognome" class="app-icon" onclick="expandDescription(this)" data-toggle="tooltip" title="Click for more information">
+                                <img src="images/app-icons/metrognome.png" alt="Metrognome app icon: a roundrect coloured with a gradient of violet on the edge to white in the centre, with a gnome head on top in the centre.">
+                                <div class="overlay"><i class="fas fa-info-circle"></i></div>
+                            </div>
+                            <div class="text">Metrognome</div>
+                            <p>A metronome app for when a normal metronome is too boring.</p>
+                            <span>
+                                <a href="https://github.com/AndrewHocking/Metrognome" data-toggle="tooltip" title="See more details on GitHub"><img src="images/button-icons/github.png"></a>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section> -->
+        </section>
 
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="row">
-                    <i class="fas fa-user"></i>
-                    <div class="info">
-                        <div class="head">Name</div>
-                        <div class="sub-title">Andrew Hocking</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <i class="fas fa-globe-americas"></i>
-                    <div class="info">
-                        <div class="head">Location</div>
-                        <div class="sub-title">Toronto, Canada</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <i class="fas fa-envelope"></i>
-                    <div class="info">
-                        <div class="head">Email</div>
-                        <div class="sub-title">andrew@hocking.tech</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <i class="fas fa-phone-alt"></i>
-                    <div class="info">
-                        <div class="head">Phone</div>
-                        <div class="sub-title">647-382-6567</div>
-                    </div>
-                </div>
+        <div class="expanded-description" id="venn">
+            <div class="expanded-description-content">
+                <p class="expanded-description-title">Venn<span class="close">&times;</span></p>
+                <p class="expanded-description-subtitle">A Java (JavaFX) desktop app for creating Venn diagrams.</p>
+                <p>
+                    This app was the end result of my four-month "Software Development Project" course, in which we were divvied
+                    up into
+                    groups of four (in my case, two) to complete our capstone project. It was a simulation of a client-developer
+                    workflow,
+                    so we obtained our instructions by asking our non-technically-inclined "stakeholder" what he wanted from the
+                    application. In the end, we were told that our application was "the best in the class by far" by our
+                    professor, and
+                    "everything I wanted and then some" by the stakeholder. It was written 100% in Java. We used JavaFX for the
+                    UI and TestFX for automated testing.
+                </p>
             </div>
-            <img class="logo" src="images/logogreen.png"/>
         </div>
-    </section>
+        <div class="expanded-description" id="carsurance">
+            <div class="expanded-description-content">
+                <p class="expanded-description-title">Carsurance<span class="close">&times;</span></p>
+                <p class="expanded-description-subtitle">An ML-based mobile app for getting car insurance estimates.</p>
+                <p>
+                    This app was the final product of my very first hackathon! I was in a group with three other people whom I
+                    had never met
+                    before. We came up with the idea to create an app that uses machine learning to estimate different car
+                    insurance quotes
+                    from multiple different companies, since we all know how much of a pain it is to try to compare quotes.
+                    I was responsible for the back-end work. This was my first time working with Python, Google Cloud, and
+                    Flask; I learned
+                    a lot and I really enjoyed it! I have never had so little sleep in one weekend, but I also had a ton of fun.
+                </p>
+            </div>
+        </div><div class="expanded-description" id="shrug">
+            <div class="expanded-description-content">
+                <p class="expanded-description-title">Shrug<span class="close">&times;</span></p>
+                <p class="expanded-description-subtitle">A SwiftUI iOS app for helping you make decisions with a spinner.</p>
+                <p>
+                    This was my second quarantine project, inspired by the fact that my family can never decide what to order
+                    in. This app
+                    lets you customize a spinner, so you can input all your restaurant choices (or any other options to pick
+                    between) and
+                    let the app decide for you. It has been very useful so far! I would like to polish this app up and
+                    eventually publish it
+                    to the App Store. It's made with 100% Swift and SwiftUI. I'm very proud of how far it has come! Development
+                    is currently
+                    on pause, due to my current employment contract that restricts me from publishing software independently.
+                </p>
+            </div>
+        </div><div class="expanded-description" id="solitaire">
+            <div class="expanded-description-content">
+                <p class="expanded-description-title">Solitaire<span class="close">&times;</span></p>
+                <p class="expanded-description-subtitle">A SwiftUI iPad/Mac Catalyst solitaire game.</p>
+                <p>
+                    In the first few weeks of quarantine, I wanted to challenge myself. So, I decided to work on a
+                    multi-platform SwiftUI
+                    app for macOS (using Catalyst), iOS, and iPadOS. I went for Solitaire, because it's a game I know well. This
+                    was a much
+                    more difficult project than I expected initially (which is part of why it's still in-progress), but it has
+                    been very fun
+                    to work on. It works best on macOS for now, but I am working on iPadOS support next, with iOS to follow
+                    that.
+                </p>
+            </div>
+        </div>
+        <div class="expanded-description" id="metrognome">
+            <div class="expanded-description-content">
+                <p class="expanded-description-title">Metrognome<span class="close">&times;</span></p>
+                <p class="expanded-description-subtitle">A metronome app for when a normal metronome is too boring.</p>
+                <p>
+                    When Apple first released SwiftUI I was immediately intrigued. I started playing around with it right
+                    away. I went
+                    through countless tutorials online and eventually decided I wanted to make something on my own, without
+                    following any
+                    guides, in one weekend. This was the end result of that.​ Why gnomes? For the pun, mostly.
+                </p>
+            </div>
+        </div>
 
-    <!-- footer section start -->
-    <!-- <footer>
-        <span>Created By Andrew Hocking | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
-    </footer> -->
 
-    <script src="script.js"></script>
-</body>
+        <!-- contact section start -->
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <div class="contact-content">
+                    <div class="row">
+                        <i class="fas fa-globe-americas"></i>
+                        <div class="info">
+                            <div class="head">Location</div>
+                            <div class="sub-title">Toronto, Canada</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="images/button-icons/github.png">
+                        <div class="info">
+                            <div class="head">GitHub</div>
+                            <div class="sub-title">AndrewHocking</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">andrew@hocking.tech</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="info">
+                            <div class="head">Phone</div>
+                            <div class="sub-title">647-382-6567</div>
+                        </div>
+                    </div>
+                </div>
+                <img class="logo" src="images/logo-green.png"/>
+            </div>
+        </section>
+    </body>
 </html>
