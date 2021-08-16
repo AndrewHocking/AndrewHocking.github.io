@@ -353,6 +353,10 @@ section .title::after{
 .projects .carousel .card:hover{
     background: var(--mainGreen);
     color: white;
+    cursor: grab;
+}
+.projects .carousel .card:active{
+    cursor: grabbing;
 }
 .projects .carousel .card .box{
     display: flex;
