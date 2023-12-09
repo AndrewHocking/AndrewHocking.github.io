@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
         <script src="script.js"></script>
@@ -21,7 +21,8 @@
                 <ul class="menu">
                     <li><a href="#about" class="menu-btn">About</a></li>
                     <li><a href="#skills" class="menu-btn">Skills</a></li>
-                    <li><a href="#projects" class="menu-btn">Projects</a></li>
+                    <li><a href="#work-experience" class="menu-btn">Experience</a></li>
+                    <!-- <li><a href="#projects" class="menu-btn">Projects</a></li> -->
                     <li><a href="#contact" class="menu-btn">Contact</a></li>
                 </ul>
                 <div class="menu-btn">
@@ -34,27 +35,52 @@
         <section class="home" id="home">
             <div class="max-width">
                 <div class="home-content">
-                    <div class="text-2">Andrew Hocking</div>
-                    <div class="text-3"><span class="typing"></span></div>
-                    <a href="https://github.com/AndrewHocking" data-toggle="tooltip" title="Follow me on GitHub"><img src="images/button-icons/github.png"></a>
-                    <a href="https://www.linkedin.com/in/andrew-hocking-050a06154/" data-toggle="tooltip" title="Connect with me on LinkedIn"><img src="images/button-icons/linkedin.png"></a>
-                    <a href="mailto:andrew@hocking.tech" data-toggle="tooltip" title="Send me an email"><img src="images/button-icons/envelope.png"></a>
-                    <a href="tel:+16473826567" data-toggle="tooltip" title="Give me a call"><img src="images/button-icons/phone.png"></a>
+                    <div class="fake-window terminal">
+                        <div class="fake-window-navbar">
+                            <div class="dots">
+                                <span class="dot" id="dot-left"></span>
+                                <span class="dot" id="dot-centre"></span>
+                                <span class="dot" id="dot-right"></span>
+                            </div>
+                            <p class="fake-window-navbar-title">~/andrewhocking</p>
+                        </div>
+                        <div class="terminal-window-text">
+                            <p>Andrew Hocking</p>
+                            <p><span class="typing"></span><span class="after-typing"> </span></p>
+                            <br>
+                            <div class="links">
+                                <div class="link"><a href="https://github.com/AndrewHocking" data-toggle="tooltip" title="Follow me on GitHub"><img src="images/button-icons/github.svg" alt="GitHub">GitHub</a></div>
+                                <div class="link"><a href="https://www.linkedin.com/in/AndrewHocking/" data-toggle="tooltip" title="Connect with me on LinkedIn"><img src="images/button-icons/linkedin.svg" alt="LinkedIn">LinkedIn</a></div>
+                                <div class="link"><a href="mailto:andrew@hocking.tech" data-toggle="tooltip" title="Send me an email"><img src="images/button-icons/envelope.svg" alt="Email">Email</a></div>
+                                <div class="link"><a href="tel:+16473826567" data-toggle="tooltip" title="Give me a call"><img src="images/button-icons/phone.svg" alt="Phone">Phone</a></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
+        
         <!-- about section start -->
         <section class="about" id="about">
             <div class="max-width">
-                <h2 class="title">About me</h2>
+                <h2 class="title">About Me</h2>
                 <div class="about-content">
                     <div class="column left">
-                        <img src="images/andrew.jpeg" alt="Picture of Andrew Hocking sitting outside, looking particularly handsome.">
+                        <div class="fake-window about">
+                            <div class="fake-window-navbar">
+                                <div class="dots">
+                                    <span class="dot" id="dot-left"></span>
+                                    <span class="dot" id="dot-centre"></span>
+                                    <span class="dot" id="dot-right"></span>
+                                </div>
+                                <p class="fake-window-navbar-title">Andrew Hocking</p>
+                            </div>
+                            <img src="images/Andrew Hocking.jpeg" alt="Picture of Andrew Hocking sitting outside, looking particularly handsome.">
+                        </div>
                     </div>
                     <div class="column right">
                         <div class="text">I'm Andrew and I'm a <span class="typing-2"></span></div>
-                        <p>I'm a detail-oriented, 3rd-year Computer Science student at York University with excellent understanding of the core
+                        <p>I'm a 4th-year Computer Science student at York University with excellent understanding of the core
                         principles and best practices of object-oriented programming, as well as strong writing and interpersonal skills. I
                         enjoy collaborating with and learning from peers, as well as being challenged by solving difficult problems individually
                         and trying new things.</p>
@@ -67,77 +93,169 @@
         <!-- skills section start -->
         <section class="skills" id="skills">
             <div class="max-width">
-                <h2 class="title">My skills</h2>
+                <h2 class="title">My Skills</h2>
                 <div class="skills-content">
-                    <div class="column left">
-                        <div class="text">Some industry tools I have used:</div>
-                        <ul>
-                            <li>Jenkins, CircleCI</li>
-                            <li>Jira, Confluence</li>
-                            <li>Git (GitHub, Bitbucket)</li>
-                            <li>Eclipse, IntelliJ IDEA</li>
-                            <li>Xcode, Android Studio</li>
-                            <li>Unix Terminal (bash, zsh)</li>
-                            <li>SeeTest, Xray, JUnit, TestFX</li>
-                            <li>Flask</li>
-                            <li>Jupyter Notebooks</li>
-                            <li>Google Cloud</li>
-                        </ul>
+                    <div class="column left fake-window tools">
+                        <div class="fake-window-navbar">
+                            <div class="dots">
+                                <span class="dot" id="dot-left"></span>
+                                <span class="dot" id="dot-centre"></span>
+                                <span class="dot" id="dot-right"></span>
+                            </div>
+                            <p class="fake-window-navbar-title">Frameworks & Tools</p>
+                        </div>
+                        <div class="tools-window">
+                            <ul>
+                                <li>Git (GitHub, Bitbucket)</li>
+                                <li>Jenkins</li>
+                                <li>Terminal, PowerShell</li>
+                                <li>Jira, Confluence</li>
+                                <li>MySQL, SQLAlchemy</li>
+                                <li>Flask</li>
+                                <li>Docker</li>
+                                <li>SwiftUI, Catalyst</li>
+                                <li>AWS, Google Cloud</li>
+                                <li>JavaFX, Swing</li>
+                                <li>SeeTest, Xray, JUnit, TestFX</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="column right">
-                        <div class="bars">
-                            <div class="info">
-                                <span><img class="language-icon" src="images/language-icons/swift.png">Swift (self-taught)</span>
-                                <span>6 years</span>
+                    <div class="column right fake-window bars">
+                        <div class="fake-window-navbar">
+                            <div class="dots">
+                                <span class="dot" id="dot-left"></span>
+                                <span class="dot" id="dot-centre"></span>
+                                <span class="dot" id="dot-right"></span>
                             </div>
-                            <div class="line swift"></div>
+                            <p class="fake-window-navbar-title">Languages</p>
                         </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span><img class="language-icon" src="images/language-icons/java.png">Java</span>
-                                <span>6 years</span>
+                        <div class="bars-window">
+                            <div class="bars">
+                                <div class="info">
+                                    <span><img class="language-icon" src="images/language-icons/swift.png">Swift (self-taught)</span>
+                                    <span>7 years</span>
+                                </div>
+                                <div class="line swift"></div>
                             </div>
-                            <div class="line java"></div>
-                        </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span><img class="language-icon" src="images/language-icons/c-cpp.png">C, C++</span>
-                                <span>4 years</span>
+                            <div class="bars">
+                                <div class="info">
+                                    <span><img class="language-icon" src="images/language-icons/java.png">Java</span>
+                                    <span>7 years</span>
+                                </div>
+                                <div class="line java"></div>
                             </div>
-                            <div class="line clangs"></div>
-                        </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span><img class="language-icon" src="images/language-icons/html-css-js.png">HTML, CSS, JavaScript</span>
-                                <span>3 years</span>
+                            <div class="bars">
+                                <div class="info">
+                                    <span><img class="language-icon" src="images/language-icons/c-cpp.png">C, C++</span>
+                                    <span>5 years</span>
+                                </div>
+                                <div class="line clangs"></div>
                             </div>
-                            <div class="line webdev"></div>
-                        </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span><img class="language-icon" src="images/language-icons/python.png">Python (self-taught)</span>
-                                <span>2 years</span>
+                            <div class="bars">
+                                <div class="info">
+                                    <span><img class="language-icon" src="images/language-icons/html-css-js.png">HTML, CSS, JavaScript</span>
+                                    <span>4 years</span>
+                                </div>
+                                <div class="line webdev"></div>
                             </div>
-                            <div class="line python"></div>
-                        </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span><img class="language-icon" src="images/language-icons/sql.png">SQL</span>
-                                <span>1 year</span>
+                            <div class="bars">
+                                <div class="info">
+                                    <span><img class="language-icon" src="images/language-icons/python.png">Python (self-taught)</span>
+                                    <span>3 years</span>
+                                </div>
+                                <div class="line python"></div>
                             </div>
-                            <div class="line sql"></div>
+                            <div class="bars">
+                                <div class="info">
+                                    <span><img class="language-icon" src="images/language-icons/sql.png">SQL</span>
+                                    <span>1 year</span>
+                                </div>
+                                <div class="line sql"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- projects section start -->
-        <section class="projects" id="projects">
+        <!-- work section start -->
+        <section class="work" id="work-experience">
             <div class="max-width">
-                <h3>Heads up!</h3>
-                <p>A website redesign is in progress and better project previews are coming soon. Check back in a couple of days for
-                    better, more up-to-date previews!</p>
+                <h2 class="title">Work Experience</h2>
+                <div class="work-content">
+                    <div class="column left fake-window amd">
+                        <div class="fake-window-navbar">
+                            <div class="dots">
+                                <span class="dot" id="dot-left"></span>
+                                <span class="dot" id="dot-centre"></span>
+                                <span class="dot" id="dot-right"></span>
+                            </div>
+                            <p class="fake-window-navbar-title">AMD</p>
+                        </div>
+                        <div id="amd-window">
+                            <div class="job-header">
+                                <img src="images/company-icons/amd.png" class="company-icon"/>
+                                <div class="job-info">
+                                    <h3>AMD</h3>
+                                    <h4>PRIME Team Software Developer (Co-op)</h4>
+                                    <h4>Platform Management Framework (PMF)</h4>
+                                </div>
+                            </div>
+                            <div class="job-description">
+                                <h5>May 2022 – August 2023</h5>
+                                <ul>
+                                    <li>Contract extended from 12 months to 16 months</li>
+                                    <li>Debugging, analyzing, and resolving quality and certification issues as reported by validation teams and customers</li>
+                                    <li>Implementing cutting-edge driver features in C++ on unreleased hardware platforms</li>
+                                    <li>Automating workflows in Python and PowerShell</li>
+                                    <li>Developing a new internal UI tool from scratch</li>
+                                    <li>Working with software, firmware, and hardware engineers to design and develop power/system-level features</li>
+                                    <li>Writing quality documentation and keeping existing documentation up to date</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right fake-window starsgroup">
+                        <div class="fake-window-navbar">
+                            <div class="dots">
+                                <span class="dot" id="dot-left"></span>
+                                <span class="dot" id="dot-centre"></span>
+                                <span class="dot" id="dot-right"></span>
+                            </div>
+                            <p class="fake-window-navbar-title">The Stars Group</p>
+                        </div>
+                        <div id="starsgroup-window">
+                            <div class="job-header">
+                                <img src="images/company-icons/pokerstars.png" class="company-icon"/>
+                                <div class="job-info">
+                                    <h3>The Stars Group</h3>
+                                    <h4>Automation Test Developer (Co-op)</h4>
+                                    <h4>PokerStars</h4>
+                                </div>
+                            </div>
+                            <div class="job-description">
+                                <h5>September 2020 – August 2021</h5>
+                                <ul>
+                                    <li>Contract extended from 8 months to 12 months</li>
+                                    <li>Developing and maintaining automation tests on iOS and Android devices using Java and SQL</li>
+                                    <li>Debugging and investigating software failures</li>
+                                    <li>Gathering testing requirements from QA analysts and software developers</li>
+                                    <li>Performing code review and responding to comments and feedback on pull requests</li>
+                                    <li>Working closely with QA analysts, software developers, and team members</li>
+                                    <li>Attending daily stand-up meetings and communicating all issues, status, and progress</li>
+                                    <li>Performing multiple tasks at the same time</li>
+                                    <li>Writing, updating, and interpreting design documentation
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- projects section start -->
+        <!-- <section class="projects" id="projects">
+            <div class="max-width">
                 <h2 class="title">Projects</h2>
                 <div class="carousel owl-carousel">
                     <div class="card" onclick="expandDescription(this)" id="venn">
@@ -149,7 +267,7 @@
                             <div class="text">Venn</div>
                             <p>A Java (JavaFX) desktop app for creating Venn diagrams.</p>
                             <span>
-                                <a href="https://github.com/nourinjh/EECS2311" data-toggle="tooltip" title="See more details on GitHub"><img src="images/button-icons/github.png"></a>
+                                <a href="https://github.com/nourinjh/EECS2311" data-toggle="tooltip" title="See more details on GitHub"><img src="images/button-icons/github.svg"></a>
                             </span>
                         </div>
                     </div>
@@ -162,7 +280,7 @@
                             <div class="text">Carsurance</div>
                             <p>An ML-based mobile app for getting car insurance estimates.</p>
                             <span>
-                                <a href="https://github.com/sehmim/qHacks2020" data-toggle="tooltip" title="See more details on GitHub"><img src="images/button-icons/github.png"></a>
+                                <a href="https://github.com/sehmim/qHacks2020" data-toggle="tooltip" title="See more details on GitHub"><img src="images/button-icons/github.svg"></a>
                                 <a href="https://devpost.com/software/qhacks2020-0cu3fq" data-toggle="tooltip" title="See more details on Devpost"><img src="images/button-icons/devpost.png"></a>
                             </span>
                         </div>
@@ -176,7 +294,7 @@
                             <div class="text">Shrug</div>
                             <p>A SwiftUI iOS app for helping you make decisions with a spinner.</p>
                             <span>
-                                <a data-toggle="tooltip" title="Coming Soon to GitHub"><img src="images/button-icons/github.png"></a>
+                                <a data-toggle="tooltip" title="Coming Soon to GitHub"><img src="images/button-icons/github.svg"></a>
                             </span>
                         </div>
                     </div>
@@ -189,7 +307,7 @@
                             <div class="text">Solitaire</div>
                             <p>A SwiftUI iPad/Mac Catalyst solitaire game.</p>
                             <span>
-                                <a href="https://github.com/AndrewHocking/Solitaire" data-toggle="tooltip" title="See more details on GitHub"><img src="images/button-icons/github.png"></a>
+                                <a href="https://github.com/AndrewHocking/Solitaire" data-toggle="tooltip" title="See more details on GitHub"><img src="images/button-icons/github.svg"></a>
                             </span>
                         </div>
                     </div>
@@ -202,7 +320,7 @@
                             <div class="text">Metrognome</div>
                             <p>A metronome app for when a normal metronome is too boring.</p>
                             <span>
-                                <a href="https://github.com/AndrewHocking/Metrognome" data-toggle="tooltip" title="See more details on GitHub"><img src="images/button-icons/github.png"></a>
+                                <a href="https://github.com/AndrewHocking/Metrognome" data-toggle="tooltip" title="See more details on GitHub"><img src="images/button-icons/github.svg"></a>
                             </span>
                         </div>
                     </div>
@@ -286,41 +404,49 @@
                     guides, in one weekend. This was the end result of that.​ Why gnomes? For the pun, mostly.
                 </p>
             </div>
-        </div>
+        </div> -->
 
         <!-- contact section start -->
         <section class="contact" id="contact">
             <div class="max-width">
                 <div class="contact-content">
-                    <div class="row">
-                        <i class="fas fa-globe-americas"></i>
-                        <div class="info">
-                            <div class="head">Location</div>
-                            <a href="https://goo.gl/maps/x3AVfwEygTCLsrA68" data-toggle="tooltip" title="Find me" class="sub-title" class="sub-title">Etobicoke, Canada</a>
+                    <a href="https://maps.app.goo.gl/PojPhzEmAigoWtjn6" data-toggle="tooltip" title="Find me" class="sub-title" id="location">
+                        <div class="row">
+                            <img src="images/button-icons/globe.svg" alt="Globe">
+                            <div class="info">
+                                <div class="head">Location</div>
+                                <div class="sub-title">Vaughan, Canada</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <img src="images/button-icons/github.png">
-                        <div class="info">
-                            <div class="head">GitHub</div>
-                            <a href="https://github.com/AndrewHocking" data-toggle="tooltip" title="Follow me on GitHub" class="sub-title">AndrewHocking</a>
+                    </a>
+                    <a href="https://github.com/AndrewHocking" data-toggle="tooltip" title="Follow me on GitHub" class="sub-title" id="github">
+                        <div class="row">
+                            <img src="images/button-icons/github.svg" alt="GitHub">
+                            <div class="info">
+                                <div class="head">GitHub</div>
+                                <div class="sub-title">AndrewHocking</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <i class="fas fa-envelope"></i>
-                        <div class="info">
-                            <div class="head">Email</div>
-                            <a href="mailto:andrew@hocking.tech" data-toggle="tooltip" title="Send me an email" class="sub-title">andrew@hocking.tech</a>
+                    </a>
+                    <a href="mailto:andrew@hocking.tech" data-toggle="tooltip" title="Send me an email" class="sub-title" id="email">
+                        <div class="row">
+                            <img src="images/button-icons/envelope.svg" alt="Email">
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">andrew@hocking.tech</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <i class="fas fa-phone-alt"></i>
-                        <div class="info">
-                            <div class="head">Phone</div>
-                            <a href="tel:+16473826567" data-toggle="tooltip" title="Give me a call" class="sub-title">647-382-6567</a>
+                    </a>
+                    <a href="tel:+16473826567" data-toggle="tooltip" title="Give me a call" class="sub-title" id="phone">
+                        <div class="row">
+                            <img src="images/button-icons/phone.svg" alt="Phone">
+                            <div class="info">
+                                <div class="head">Phone</div>
+                                <div class="sub-title">647-382-6567</div>
+                            </div>
                         </div>
+                    </a>
                     </div>
-                </div>
                 <img class="logo" src="images/logo-green.png"/>
             </div>
         </section>

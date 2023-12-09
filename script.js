@@ -6,7 +6,7 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky");
         }
-        
+
     });
 
     $('.navbar .menu li a').click(function(){
@@ -28,32 +28,28 @@ $(document).ready(function(){
     // typing text animation script
     var typed = new Typed(".typing", {
         strings: [
-            "🎓 Student",
-            "💻 Software Developer",
-            "🎓 Student",
-            "💻 Software Developer",
-            "🎓 Student",
-            "💻 Software Developer",
-            "🎓 Student",
-            "💻 Software Developer",
-            "🍫 Chocolate Connoisseur"
+            "Swift Developer",
+            "Java Developer",
+            "C/C++ Developer",
+            "Web Developer",
+            "Python Developer",
+            "Software Developer",
         ],
         typeSpeed: 100,
         backSpeed: 60,
-        loop: true
+        loop: false,
+        cursorChar: '|'
     });
 
     var typed = new Typed(".typing-2", {
         strings: [
-            "​Student 🎓",
-            "Software Developer 💻",
-            "​Student 🎓",
-            "Software Developer 💻",
-            "​Student 🎓",
-            "Software Developer 💻",
-            "​Student 🎓",
-            "Software Developer 💻",
-            "Chocolate Connoisseur 🍫"
+          "Swift Developer",
+          "Java Developer",
+          "C/C++ Developer",
+          "Web Developer",
+          "Python Developer",
+          "Chocolate Lover",
+          "Software Developer",
         ],
         typeSpeed: 100,
         backSpeed: 60,
