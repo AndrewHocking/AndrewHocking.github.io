@@ -2,7 +2,7 @@ name: Deploy By WebDAV
 on:
   push:
     branches:
-    - master
+    - main
 jobs:
   deploy:
     name: Deploy
